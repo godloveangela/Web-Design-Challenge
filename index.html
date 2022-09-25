@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no, viewport-fit=cover" />
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="./static/plugin/bootsrap5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./static/css/base.css">
+  <link rel="stylesheet" href="./static/css/header.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Latitude</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Plots
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./static/views/maxTemperature.html">Max Temperature</a></li>
+              <li><a class="dropdown-item" href="./static/views/humidity.html">Humidity</a></li>
+              <li><a class="dropdown-item" href="./static/views/cloudiness.html">Cloudiness</a></li>
+              <li><a class="dropdown-item" href="./static/views/windSpeed.html">Wind Speed</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./static/views/comparison.html">Comparison</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./static/views/data.html">Data</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="row gx-4">
+        <div class="col-lg-7 col-md-7 col-sm-12">
+          <div class="part-bg padding14">
+            <h2 class="title">Summary: Latitude vs. X</h2>
+            <img class="float-image" src="./static/assets/images/Fig1.png" alt="image">
+            <p>
+              The purpose of this project was to analyze how weather changes
+              as you get closer to the equator. To accomplish this analysis,
+              we first pulled data from the Open WeatherMap API to assemble a
+              dataset on over 500 cities.
+            </p>
+            <p>
+              After assembling the dataset, we used Matplotlib to plot various
+              aspects of the weather vs. latitude. Factors we looked at
+              included: temperature, cloudiness, wind speed, and humidity.
+              This site provides the source data and visualizations created as
+              part of the analysis, as well as explanations and descriptions
+              of any trends and correlations witnessed.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-12">
+          <div class="part-bg padding14">
+            <h2 class="title">Visualisations</h2>
+            <div class="images-list row g-2">
+              <div class="col-lg-6 col-md-6 col-sm-3 col-3">
+                <img src="./static/assets/images/Fig1.png" alt="Fig1">
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-3 col-3">
+                <img src="./static/assets/images/Fig2.png" alt="Fig2">
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-3 col-3">
+                <img src="./static/assets/images/Fig3.png" alt="Fig3">
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-3 col-3">
+                <img src="./static/assets/images/Fig4.png" alt="Fig4">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="./static/plugin/bootsrap5/js/bootstrap.bundle.min.js"></script>
+  
+</body>
+</html>
